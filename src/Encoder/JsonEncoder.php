@@ -24,8 +24,13 @@ class JsonEncoder implements EncoderInterface
     {
         $json['source']['id'] = $object->get('source');
 
-        foreach ($object->getValues() as $value) {
-            $json['attributes']['attribute'][] = $this->getAttribute($value);
+        foreach ($object->getAttributes() as $attribute) {
+            if ($attribute->isGenerated()) {
+                continue;
+            }
+            foreach ($attribute as $value) {
+                $json['attributes']['attribute'][] = $this->getAttribute($value);
+            }
         }
 
         $data['objects']['object'][] = $json;

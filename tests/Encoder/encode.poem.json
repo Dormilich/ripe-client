@@ -25,12 +25,6 @@
             "name" : "mnt-by",
             "value" : "LIM-MNT"
           }, {
-            "name" : "created",
-            "value" : "2007-03-14T08:51:01Z"
-          }, {
-            "name" : "last-modified",
-            "value" : "2007-03-14T08:51:01Z"
-          }, {
             "name" : "source",
             "value" : "RIPE"
           }

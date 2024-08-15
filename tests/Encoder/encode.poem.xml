@@ -10,8 +10,6 @@
                 <attribute name="text" value="How I wish I could recollect pi easily today!"/>
                 <attribute name="author" value="LIM1-RIPE"/>
                 <attribute name="mnt-by" value="LIM-MNT"/>
-                <attribute name="created" value="2007-03-14T08:51:01Z"/>
-                <attribute name="last-modified" value="2007-03-14T08:51:01Z"/>
                 <attribute name="source" value="RIPE"/>
             </attributes>
         </object>

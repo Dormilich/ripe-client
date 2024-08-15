@@ -28,8 +28,13 @@ class XmlEncoder implements EncoderInterface
         $o->addChild('source')->addAttribute('id', $object->get('source'));
 
         $a = $o->addChild('attributes');
-        foreach ($object->getValues() as $value) {
-            $this->addAttribute($a, $value);
+        foreach ($object->getAttributes() as $attribute) {
+            if ($attribute->isGenerated()) {
+                continue;
+            }
+            foreach ($attribute as $value) {
+                $this->addAttribute($a, $value);
+            }
         }
 
         return $xml->asXML();
