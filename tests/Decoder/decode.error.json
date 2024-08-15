@@ -1,0 +1,69 @@
+{
+  "link" : {
+    "type" : "locator",
+    "href" : "http://rest.db.ripe.net/ripe/person"
+  },
+  "objects" : {
+    "object" : [ {
+      "type" : "person",
+      "link" : {
+        "type" : "locator",
+        "href" : "http://rest.db.ripe.net/invalid_source/person/PP1-RIPE"
+      },
+      "source" : {
+        "id" : "invalid_source"
+      },
+      "primary-key" : {
+        "attribute" : [ {
+          "name" : "nic-hdl",
+          "value" : "PP1-RIPE"
+        } ]
+      },
+      "attributes" : {
+        "attribute" : [ {
+          "name" : "person",
+          "value" : "Pauleth Palthen"
+        }, {
+          "name" : "address",
+          "value" : "Singel 258"
+        }, {
+          "name" : "phone",
+          "value" : "+31-1234567890"
+        }, {
+          "name" : "e-mail",
+          "value" : "noreply@ripe.net"
+        }, {
+          "name" : "admin-c",
+          "value" : "PP-RIPE"
+        }, {
+          "link" : {
+            "type" : "locator",
+            "href" : "http://rest.db.ripe.net/invalid_source/mntner/OWNER-MNT"
+          },
+          "name" : "mnt-by",
+          "value" : "OWNER-MNT",
+          "referenced-type" : "mntner"
+        }, {
+          "name" : "nic-hdl",
+          "value" : "PP1-RIPE"
+        }, {
+          "name" : "source",
+          "value" : "INVALID_SOURCE"
+        } ]
+      }
+    } ]
+  },
+  "errormessages" : {
+    "errormessage" : [ {
+      "severity" : "Error",
+      "text" : "Unrecognized source: %s",
+      "args" : [ {
+        "value" : "INVALID_SOURCE"
+      } ]
+    } ]
+  },
+  "terms-and-conditions" : {
+    "type" : "locator",
+    "href" : "http://www.ripe.net/db/support/db-terms-conditions.pdf"
+  }
+}

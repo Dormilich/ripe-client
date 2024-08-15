@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/ripe/person"/>
+    <objects>
+        <object type="person">
+            <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/invalid_source/person/PP1-RIPE"/>
+            <source id="RIPE"/>
+            <primary-key>
+                <attribute name="nic-hdl" value="PP1-RIPE"/>
+            </primary-key>
+            <attributes>
+                <attribute name="person" value="Pauleth Palthen"/>
+                <attribute name="address" value="Singel 258"/>
+                <attribute name="phone" value="+31-1234567890"/>
+                <attribute name="e-mail" value="noreply@ripe.net"/>
+                <attribute name="admin-c" value="INVALID"/>
+                <attribute name="mnt-by" value="OWNER-MNT" referenced-type="mntner">
+                    <link xlink:type="locator" xlink:href="http://rest.db.ripe.net/invalid_source/mntner/OWNER-MNT"/>
+                </attribute>
+                <attribute name="nic-hdl" value="PP1-RIPE"/>
+                <attribute name="source" value="RIPE"/>
+            </attributes>
+        </object>
+    </objects>
+    <errormessages>
+        <errormessage severity="Error" text="&quot;%s&quot; is not valid for this object type">
+            <attribute name="admin-c" value="INVALID"/>
+            <args value="admin-c"/>
+        </errormessage>
+    </errormessages>
+    <terms-and-conditions xlink:type="locator" xlink:href="http://www.ripe.net/db/support/db-terms-conditions.pdf"/>
+</whois-resources>

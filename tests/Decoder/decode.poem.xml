@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<whois-resources xmlns:xlink="http://www.w3.org/1999/xlink">
+    <objects>
+        <object type="poem">
+            <link xlink:type="locator" xlink:href="https://rest.db.ripe.net/ripe/poem/POEM-3-14"/>
+            <source id="ripe"/>
+            <primary-key>
+                <attribute name="poem" value="POEM-3-14"/>
+            </primary-key>
+            <attributes>
+                <attribute name="poem" value="POEM-3-14"/>
+                <attribute name="descr" value="Happy Pi Day!"/>
+                <attribute name="form" value="FORM-PROSE" referenced-type="poetic-form">
+                    <link xlink:type="locator" xlink:href="https://rest.db.ripe.net/ripe/poetic-form/FORM-PROSE"/>
+                </attribute>
+                <attribute name="text" value="How I wish I could recollect pi easily today!"/>
+                <attribute name="admin-c" value="LIM1-RIPE" referenced-type="person">
+                    <link xlink:type="locator" xlink:href="https://rest.db.ripe.net/ripe/person/LIM1-RIPE"/>
+                </attribute>
+                <attribute name="author" value="LIM1-RIPE" referenced-type="person" comment="actually anonymous">
+                    <link xlink:type="locator" xlink:href="https://rest.db.ripe.net/ripe/person/LIM1-RIPE"/>
+                </attribute>
+                <attribute name="remarks" value="Poem stolen from the Wikipedia, in celebration of Pi Day. (Well, in the US at least.)"/>
+                <attribute name="mnt-by" value="LIM-MNT" referenced-type="mntner">
+                    <link xlink:type="locator" xlink:href="https://rest.db.ripe.net/ripe/mntner/LIM-MNT"/>
+                </attribute>
+                <attribute name="created" value="2007-03-14T08:51:01Z"/>
+                <attribute name="last-modified" value="2007-03-14T08:51:01Z"/>
+                <attribute name="source" value="RIPE"/>
+            </attributes>
+        </object>
+    </objects>
+    <terms-and-conditions xlink:type="locator" xlink:href="https://apps.db.ripe.net/docs/HTML-Terms-And-Conditions"/>
+    <version version="1.113.2" timestamp="2024-06-28T14:53:17Z" commit-id="30e26dc"/>
+</whois-resources>

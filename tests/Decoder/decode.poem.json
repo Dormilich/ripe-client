@@ -1,0 +1,86 @@
+{
+  "objects": {
+    "object": [ {
+      "type" : "poem",
+      "link" : {
+        "type" : "locator",
+        "href" : "https://rest.db.ripe.net/ripe/poem/POEM-3-14"
+      },
+      "source" : {
+        "id" : "ripe"
+      },
+      "primary-key" : {
+        "attribute" : [ {
+          "name" : "poem",
+          "value" : "POEM-3-14"
+        } ]
+      },
+      "attributes" : {
+        "attribute" : [ {
+          "name" : "poem",
+          "value" : "POEM-3-14"
+        }, {
+          "name" : "descr",
+          "value" : "Happy Pi Day!"
+        }, {
+          "link" : {
+            "type" : "locator",
+            "href" : "https://rest.db.ripe.net/ripe/poetic-form/FORM-PROSE"
+          },
+          "name" : "form",
+          "value" : "FORM-PROSE",
+          "referenced-type" : "poetic-form"
+        }, {
+          "name" : "text",
+          "value" : "How I wish I could recollect pi easily today!"
+        }, {
+          "link" : {
+            "type" : "locator",
+            "href" : "https://rest.db.ripe.net/ripe/person/LIM1-RIPE"
+          },
+          "name" : "admin-c",
+          "value" : "LIM1-RIPE",
+          "referenced-type" : "person"
+        }, {
+          "link" : {
+            "type" : "locator",
+            "href" : "https://rest.db.ripe.net/ripe/person/LIM1-RIPE"
+          },
+          "name" : "author",
+          "value" : "LIM1-RIPE",
+          "referenced-type" : "person",
+          "comment" : "actually anonymous"
+        }, {
+          "name" : "remarks",
+          "value" : "Poem stolen from the Wikipedia, in celebration of Pi Day. (Well, in the US at least.)"
+        }, {
+          "link" : {
+            "type" : "locator",
+            "href" : "https://rest.db.ripe.net/ripe/mntner/LIM-MNT"
+          },
+          "name" : "mnt-by",
+          "value" : "LIM-MNT",
+          "referenced-type" : "mntner"
+        }, {
+          "name" : "created",
+          "value" : "2007-03-14T08:51:01Z"
+        }, {
+          "name" : "last-modified",
+          "value" : "2007-03-14T08:51:01Z"
+        }, {
+          "name" : "source",
+          "value" : "RIPE"
+        } ]
+      }
+    } ]
+  },
+  "terms-and-conditions" : {
+    "type" : "locator",
+    "href" : "https://apps.db.ripe.net/docs/HTML-Terms-And-Conditions"
+  },
+  "version" : {
+    "version" : "1.113.2",
+    "timestamp" : "2024-06-28T14:53:17Z",
+    "commit-id" : "30e26dc"
+  }
+}
