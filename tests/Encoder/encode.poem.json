@@ -1,0 +1,41 @@
+{
+  "objects": {
+    "object": [ {
+      "source" : {
+        "id" : "RIPE"
+      },
+      "attributes" : {
+        "attribute" : [
+          {
+            "name" : "poem",
+            "value" : "POEM-3-14"
+          }, {
+            "name" : "descr",
+            "value" : "Happy Pi Day!"
+          }, {
+            "name" : "form",
+            "value" : "FORM-PROSE"
+          }, {
+            "name" : "text",
+            "value" : "How I wish I could recollect pi easily today!"
+          }, {
+            "name" : "author",
+            "value" : "LIM1-RIPE"
+          }, {
+            "name" : "mnt-by",
+            "value" : "LIM-MNT"
+          }, {
+            "name" : "created",
+            "value" : "2007-03-14T08:51:01Z"
+          }, {
+            "name" : "last-modified",
+            "value" : "2007-03-14T08:51:01Z"
+          }, {
+            "name" : "source",
+            "value" : "RIPE"
+          }
+        ]
+      }
+    } ]
+  }
+}
