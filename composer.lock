@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dormilich/ripe.git",
-                "reference": "3c8472bc4535de20f39a74a620459e0b210aec95"
+                "reference": "e16852495fd679d16349ade7d97d44b95dee8e12"
             },
             "require": {
                 "dormilich/rpsl": "@dev",
@@ -56,7 +56,7 @@
                 }
             ],
             "description": "Object definitions for the RIPE NCC WHOIS database web service.",
-            "time": "2024-08-16T07:55:37+00:00"
+            "time": "2024-08-16T14:44:33+00:00"
         },
         {
             "name": "dormilich/rpsl",
@@ -64,7 +64,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dormilich/rpsl.git",
-                "reference": "a2fdc59e0ac227e0bd9ae3a591283c4ce48b6941"
+                "reference": "b667ab36d19a63644c1c95b261d5682222d4f2f9"
             },
             "require": {
                 "ext-dom": "*",
@@ -108,7 +108,7 @@
                 }
             ],
             "description": "Define base functionality for RPSL (whois) objects",
-            "time": "2024-08-15T11:34:10+00:00"
+            "time": "2024-08-16T14:42:14+00:00"
         },
         {
             "name": "psr/http-client",

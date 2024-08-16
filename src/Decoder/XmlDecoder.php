@@ -4,8 +4,6 @@ namespace Dormilich\RipeClient\Decoder;
 
 use Dormilich\RipeClient\Exception\DecoderException;
 use Dormilich\RPSL\Attribute\Attribute;
-use Dormilich\RPSL\Attribute\Presence;
-use Dormilich\RPSL\Attribute\Repeat;
 use Dormilich\RPSL\Attribute\Value;
 use Psr\Http\Message\ResponseInterface;
 use SimpleXMLElement;
@@ -110,7 +108,7 @@ class XmlDecoder implements DecoderInterface
         $comment = (string) $attribute['comment'];
         $type = (string) $attribute['referenced-type'];
 
-        $attr = new Attribute($name, Presence::optional, Repeat::multiple);
+        $attr = new Attribute($name);
 
         return new Value($attr, $value, $comment ?: null, $type ?: null);
     }

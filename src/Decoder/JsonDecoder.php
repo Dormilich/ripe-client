@@ -4,8 +4,6 @@ namespace Dormilich\RipeClient\Decoder;
 
 use Dormilich\RipeClient\Exception\DecoderException;
 use Dormilich\RPSL\Attribute\Attribute;
-use Dormilich\RPSL\Attribute\Presence;
-use Dormilich\RPSL\Attribute\Repeat;
 use Dormilich\RPSL\Attribute\Value;
 use JsonException;
 use Psr\Http\Message\ResponseInterface;
@@ -103,7 +101,7 @@ class JsonDecoder implements DecoderInterface
      */
     private function getValue(object $attribute): Value
     {
-        $attr = new Attribute($attribute->name, Presence::optional, Repeat::multiple);
+        $attr = new Attribute($attribute->name);
 
         $comment = $attribute->comment ?? null;
         $type = $attribute->{'referenced-type'} ?? null;
