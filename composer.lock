@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dormilich/ripe.git",
-                "reference": "86c3a8e2ea0a676e83f36ca8faa6de388c38c8cc"
+                "reference": "3c8472bc4535de20f39a74a620459e0b210aec95"
             },
             "require": {
                 "dormilich/rpsl": "@dev",
@@ -56,7 +56,7 @@
                 }
             ],
             "description": "Object definitions for the RIPE NCC WHOIS database web service.",
-            "time": "2024-08-15T11:40:31+00:00"
+            "time": "2024-08-16T07:55:37+00:00"
         },
         {
             "name": "dormilich/rpsl",
