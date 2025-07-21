@@ -18,12 +18,12 @@ class BasicAuth implements AuthorizationInterface
     private string $credential;
 
     /**
-     * @param Mntner $mnt
+     * @param string $username
      * @param string $password
      */
-    public function __construct(Mntner $mnt, string $password)
+    public function __construct(string $username, string $password)
     {
-        $secret = $mnt->getHandle() . ':' . $password;
+        $secret = $username . ':' . $password;
         $this->credential = base64_encode($secret);
     }
 

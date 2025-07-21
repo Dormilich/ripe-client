@@ -22,12 +22,13 @@ class BasicAuthTest extends TestCase
             ->method('withHeader')
             ->with(
                 $this->identicalTo('Authorization'),
-                $this->identicalTo('Basic VEVTVC1EQk0tTU5UOmVtcHR5cGFzc3dvcmQ=')
+                $this->identicalTo('Basic NkhEVEtIUURNUEdVQTlUWklCNVJEVUI6VzZHYUV0MlNrVHJGTzh4aDJFcUZVNFBo')
             )
             ->willReturn($this->createStub(RequestInterface::class));
 
-        $mnt = new Mntner('TEST-DBM-MNT');
-        $auth = new BasicAuth($mnt, 'emptypassword');
+        $user = '6HDTKHQDMPGUA9TZIB5RDUB';
+        $pass = 'W6GaEt2SkTrFO8xh2EqFU4Ph';
+        $auth = new BasicAuth($user, $pass);
         $result = $auth->authorize($request);
 
         $this->assertNotSame($result, $request);
