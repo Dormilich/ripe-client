@@ -35,7 +35,7 @@ class TransportException extends Exception implements ExceptionInterface
      * @param string $message
      * @param Throwable|null $previous
      */
-    public function __construct(RequestInterface $request, string $message = '', Throwable $previous = null)
+    public function __construct(RequestInterface $request, string $message = '', ?Throwable $previous = null)
     {
         $this->request = $request;
         parent::__construct($message, 0, $previous);

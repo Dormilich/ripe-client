@@ -49,7 +49,6 @@ class JsonDecoder implements DecoderInterface
         $this->addAttributes($data, $result);
         $this->addErrors($json, $result);
 
-
         return $result;
     }
 

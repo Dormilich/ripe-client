@@ -89,7 +89,7 @@ class Client
      * @throws RequestException Unsuccessful response.
      * @throws TransportException Problem getting a response.
      */
-    public function submit(string $method, UriInterface $uri, RipeInterface $object = null): Result
+    public function submit(string $method, UriInterface $uri, ?RipeInterface $object = null): Result
     {
         $request = $this->getRequest($method, $uri, $object);
         $response = $this->getResponse($request);
