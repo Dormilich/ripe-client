@@ -4,18 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fab2ca576d0f88857ee3c1f2633e7ff",
+    "content-hash": "36dd90fb41145d3b557f94a4c7df3175",
     "packages": [
         {
             "name": "dormilich/ripe",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dormilich/ripe.git",
-                "reference": "e16852495fd679d16349ade7d97d44b95dee8e12"
+                "reference": "d72297f157641c424bd921713d0cbeeef02d9a23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dormilich/ripe/zipball/d72297f157641c424bd921713d0cbeeef02d9a23",
+                "reference": "d72297f157641c424bd921713d0cbeeef02d9a23",
+                "shasum": ""
             },
             "require": {
-                "dormilich/rpsl": "@dev",
+                "dormilich/rpsl": "^0.1.1",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-libxml": "*",
@@ -29,25 +35,15 @@
             "require-dev": {
                 "phpunit/phpunit": "^10.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Dormilich\\RIPE\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Dormilich\\RIPE\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit --testdox"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-3.0"
+                "LGPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -56,15 +52,25 @@
                 }
             ],
             "description": "Object definitions for the RIPE NCC WHOIS database web service.",
-            "time": "2024-08-16T14:44:33+00:00"
+            "support": {
+                "issues": "https://github.com/Dormilich/ripe/issues",
+                "source": "https://github.com/Dormilich/ripe/tree/0.1.0"
+            },
+            "time": "2025-08-19T16:46:49+00:00"
         },
         {
             "name": "dormilich/rpsl",
-            "version": "dev-master",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dormilich/rpsl.git",
-                "reference": "b667ab36d19a63644c1c95b261d5682222d4f2f9"
+                "reference": "4f20338eb63e78b46690c955e4ec5e73202557ec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dormilich/rpsl/zipball/4f20338eb63e78b46690c955e4ec5e73202557ec",
+                "reference": "4f20338eb63e78b46690c955e4ec5e73202557ec",
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -80,23 +86,13 @@
             "require-dev": {
                 "phpunit/phpunit": "^10.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
                     "Dormilich\\RPSL\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Dormilich\\RPSL\\Tests\\": "tests/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "phpunit --testdox"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "LGPL-3.0"
             ],
@@ -108,7 +104,11 @@
                 }
             ],
             "description": "Define base functionality for RPSL (whois) objects",
-            "time": "2024-08-16T14:42:14+00:00"
+            "support": {
+                "issues": "https://github.com/Dormilich/rpsl/issues",
+                "source": "https://github.com/Dormilich/rpsl/tree/0.1.1"
+            },
+            "time": "2025-08-19T16:32:23+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1898,10 +1898,8 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "dormilich/ripe": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
@@ -1915,6 +1913,6 @@
         "ext-xml": "*",
         "ext-xmlwriter": "*"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
